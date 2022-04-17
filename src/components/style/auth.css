@@ -1,0 +1,137 @@
+/* *************************************************************************************
+                                REGISTER
+************************************************************************************* */
+#Register {
+    background: rgb(11, 15, 25);
+    color: white;
+}
+
+#Register .register-box {
+    background: rgb(17, 24, 39);
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 10px 15px;
+}
+
+#Register .register-box h1 {
+    color: rgb(237, 242, 247);
+    text-align: center;
+    padding: 16px 0;
+}
+
+#Register .register-box form > p {
+    color: rgb(160, 174, 192);
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+#Register .register-box .logo-container {
+    width: 100%;
+    max-width: 140px;
+    margin: 20px auto 0 auto;
+}
+
+#Register .register-box .logo-container img {
+    width: 100%;
+}
+
+#Register .register-box form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#Register .register-box form label {
+    display: block;
+    margin: 6px 0;
+    color: rgb(160, 174, 192);
+}
+
+#Register .register-box form div {
+    margin: 10px 0;
+}
+
+#Register .register-box form input {
+    width: 100%;
+    height: 50px;
+    display: block;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid rgb(45, 55, 72);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(237, 242, 247);
+}
+
+#Register .register-box form input::placeholder {
+    color: rgb(219 219 219);
+}
+
+#Register .register-box form input:hover {
+    border: 1px solid white;
+}
+
+#Register .register-box form input:focus {
+    outline: none;
+    border: 1px solid rgb(117, 130, 235);
+}
+
+#Register .register-box form button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background: rgb(117, 130, 235);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 30px 0 10px 0;
+    font-weight: 400;
+}
+
+#Register .register-box form button:hover {
+    background: rgb(81, 91, 164);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#Register .register-box form .error {
+    outline: none;
+    border: 1px solid rgba(216, 31, 31, 0.5);
+    box-shadow: 0 0 6px 2px rgba(216, 31, 31, 0.5);
+}
+
+.error-p {
+    color: rgb(209, 67, 67);
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+#Register .register-box form button:disabled {
+    background: #e4e5e9;
+    color: #a7b2c3;
+}
+
+#Register .log-in {
+    color: rgb(160, 174, 192);
+    text-align: center;
+    margin: 20px 0;
+}
+
+#Register .log-in a {
+    text-decoration: none;
+    margin-left: 4px;
+    color: rgb(230 230 230);
+}
+
+#Register .log-in a:hover {
+    text-decoration: underline;
+}

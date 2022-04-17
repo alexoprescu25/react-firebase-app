@@ -1,0 +1,160 @@
+#Seo {
+    background: rgb(11, 15, 25);
+}
+
+#Seo .add-link {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background: rgb(33, 41, 70);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Seo .add-link input {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid rgba(224, 224, 224, 0.2);
+    color: rgb(189, 200, 240);
+    border-radius: 8px;
+}
+
+#Seo .add-link input:hover {
+    border: 1px solid white;
+}
+
+#Seo .add-link input:focus {
+    outline: none;
+    border: 1px solid rgb(33, 150, 243);
+}
+
+#Seo .add-link input::placeholder {
+    color: rgb(189, 200, 240);
+}
+
+#Seo .add-link button {
+    display: block;
+    margin: 10px 0 10px auto;
+    width: 100%;
+    max-width: 120px;
+    border: none;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: rgb(33, 150, 243);
+    color: white;
+    font-weight: 500;
+}
+
+#Seo .add-link button svg {
+    margin-left: 6px;
+}
+
+#Seo .add-link button:hover {
+    cursor: pointer;
+    background: rgb(30, 136, 229);
+    transition: 0.4s;
+}
+
+#Seo .seo-items p {
+    color: white;
+}
+
+#Seo .seo-items {
+    background: rgb(33, 41, 70);
+    box-shadow: rgb(0 0 0 / 24%) 0px 10px 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#Seo .seo-items table {
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+#Seo .seo-items thead td {
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+#Seo .seo-items td {
+    color: white;
+    padding: 10px 20px;
+}
+
+#Seo .copy-button {
+    margin: 0 10px;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+#Seo .copy-button:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s;
+}
+
+#Seo .copy-button:hover:before {
+    content: 'Copy';
+    position: absolute;
+    top: -110%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Seo td a {
+    color: #03A9F4;
+    text-decoration: none;
+}
+
+#Seo td a:hover {
+    text-decoration: underline;
+}
+
+#Seo .seo-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#Seo .seo-buttons button {
+    display: block;
+    width: 100%;
+    max-width: 140px;
+    padding: 6px 0;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+#Seo .seo-buttons button:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.4s;
+}
+
+#Seo .seo-buttons .reset-btn {
+    background: rgb(255, 25, 67);
+}
+
+#Seo .seo-buttons .post-btn {
+    background: #03A9F4;
+} 

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+ul {
+    list-style: none;
+}
+
+.global-success-message {
+    text-align: center;
+    background: #ddffdd;
+    padding: 10px 0;
+    color: #006e00;
+    transition: 0.4s ease-in;
+}
+
+.success-message {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    color: rgb(16, 185, 129);
+    background-color: rgba(63, 199, 154, 0.2);
+    border: 1px solid rgb(16, 185, 129);
+    padding: 10px 0;
+    text-align: center;
+    transition: 0.4s ease-in;
+}
+
+.error-message {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    color: rgba(216, 31, 31, 0.5);
+    background-color: rgba(216, 31, 31, 0.1);
+    border: 1px solid rgba(216, 31, 31, 0.5);
+    padding: 10px 0;
+    text-align: center;
+    transition: 0.4s ease-in;
+}
+
+/* *************************************************************************************
+                                HEADER
+************************************************************************************* */
+
+header {
+    background-color: rgb(21, 32, 43);
+    padding: 20px;
+}
+
+header .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 0.5s;
+    border-radius: 4px;
+}
+
+header .container .logo-container {
+    width: 100%;
+    max-width: 180px;
+    margin-right: 20px;
+}
+
+header .container .logo-container a,
+header .container .logo-container a img {
+    display: block;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .authentication .auth-user {
+    display: flex;
+    align-items: center;
+}
+
+header .authentication .auth-user p {
+    color: white;
+    margin:0 10px;
+}
+
+header .auth-user {
+    position: relative;
+}
+
+header .auth-user .profile-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+header .auth-user .profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+header .auth-user .profile-image img:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+header .auth-user .profile-dropdown {
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    background: rgb(11, 15, 25);
+    padding: 10px;
+    bottom: -58px;
+    right: 0;
+    transition: 0.3s ease-in;
+    z-index: 20;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+}
+
+header .auth-user .profile-dropdown a {
+    width: 100%;
+    display: block;
+    max-width: 150px;
+}
+
+header .auth-user .profile-dropdown a svg {
+    margin-right: 10px;
+}
+
+/* *************************************************************************************
+                                SIDEBAR
+************************************************************************************* */
+
+#aside {
+    position: absolute;
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    background: rgb(17, 24, 39);
+    padding: 20px;
+    left: -100%;
+    transition: 0.4s;
+}
+
+#aside .close {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+#aside .close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+#aside .sidebar-content {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#aside .sidebar-content a {
+    color: rgb(209, 213, 219);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 6px;
+    display: block;
+    border-radius: 4px;
+    margin: 2px 0;
+    line-height: 1.75;
+}
+
+#aside .sidebar-content a svg {
+    margin-right: 8px;
+}
+
+#aside .sidebar-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+#aside .logo-container {
+    width: 100%;
+    max-width: 140px;
+}
+
+#aside .logo-container a,
+#aside .logo-container a img {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* *************************************************************************************
+                                HOMEPAGE
+************************************************************************************* */
+
+#Homepage {
+    background-color: rgb(11, 15, 25);
+}
+
+#Homepage {
+    position: relative;
+}
+
+#Homepage .homepage-banner {
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20vh;
+}
+
+#Homepage .homepage-banner img {
+    width: 100%;
+}
+
+#Homepage .homepage-content .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#Homepage .homepage-content .features > p {
+    color: rgb(160, 174, 192);
+}
+
+#Homepage .homepage-content ul,
+#Homepage .homepage-content ul li,
+#Homepage .homepage-content .features {
+    display: flex;
+    align-items: center;
+}
+
+#Homepage .homepage-content .features {
+    justify-content: center;
+    margin: 40px 0 60px 0;
+}
+
+#Homepage .homepage-content ul li {
+    color: white;
+}
+
+#Homepage .homepage-content ul li svg {
+    color: rgb(20, 184, 166);
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border: 2px solid rgb(20, 184, 166);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+#Homepage .homepage-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#Homepage .homepage-services div {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+#Homepage .homepage-services div a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#Homepage .homepage-services div svg {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#Homepage .homepage-services div:first-child svg {
+    background: rgb(117, 130, 235);
+}
+
+#Homepage .homepage-services div:nth-child(2) svg {
+    background: rgb(16, 185, 129);
+}
+
+#Homepage .homepage-services div:nth-child(3) svg {
+    background: rgb(255, 176, 32);
+}
+
+#Homepage .homepage-services div:nth-child(4) svg {
+    background: rgb(33, 150, 243);
+}
+
+#Homepage .homepage-services div:nth-child(5) svg {
+    background: rgb(177, 2, 12);
+}
+
+#Homepage .homepage-services div p {
+    color: rgb(237, 242, 247);
+    font-size: 26px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+#Homepage .homepage-services div a:hover {
+    padding: 20px 0 10px 0;
+    transition: 0.4s;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.2);
+}
+
+#Homepage {
+    background: url('https://i.ibb.co/vzh8szK/ales-nesetril-Im7l-Zjxe-Lhg-unsplash.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#Homepage #aside {
+    height: 100%;
+    max-height: 500px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 1);
+    z-index: 20;
+}
+
+#Homepage header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+#Homepage header nav div:not(.authentication) a,
+#Homepage header nav div:not(.authentication) p {
+    color: rgb(52, 71, 103);
+}
+
+#Homepage header nav a:hover {
+    background: rgba(52, 71, 103, 0.3);
+}
+
+#Homepage header .profile-image {
+    broder: 1px solid rgb(52, 71, 103);
+}
+
+#Homepage .homepage-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(360deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+}
+
+#Homepage .features {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 14px 4px rgba(0, 0, 0);
+}
+
+#Homepage .authentication .profile-dropdown a {
+    color: white;
+}
